@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Mukhametianov2
+namespace Gayfullin
 {
     /// <summary>
     /// Логика взаимодействия для ServicePage.xaml
     /// </summary>
-    public partial class ServicePage : Page
+    public partial class AgentPage : Page
     {
-        public ServicePage()
+        public AgentPage()
         {
             InitializeComponent();
         }

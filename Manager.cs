@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace Mukhametianov2
+namespace Gayfullin
 {
     internal class Manager
     {

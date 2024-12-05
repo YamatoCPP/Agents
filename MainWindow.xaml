@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gayfullin"
         mc:Ignorable="d"
-        Title="Мухаметьянов" Height="450" Width="800" FontFamily="Co" Icon="img/Глазки-save.png">
+        Title="Раян" Height="450" Width="800" FontFamily="Century Gotic" Icon="img/Глазки-save.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>

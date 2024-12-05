@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Mukhametianov2
+namespace Gayfullin
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,7 +23,7 @@ namespace Mukhametianov2
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ServicePage());
+            MainFrame.Navigate(new AgentPage());
             Manager.MainFrame = MainFrame;
         }
 

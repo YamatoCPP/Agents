@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Gayfullin"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ServicePage">
+      Title="ServicePage" FontFamily="Century Gotic">
 
     <Grid>
         <Button Click="Button_Click" Background="#B175EE" Content="Вперед" Height="30" Width="175"></Button>
