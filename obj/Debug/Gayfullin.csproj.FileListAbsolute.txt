@@ -1,0 +1,10 @@
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\Gayfullin.csproj.AssemblyReference.cache
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\Gayfullin.csproj.SuggestedBindingRedirects.cache
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\AddEditPage.g.cs
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\MainWindow.g.cs
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\AgentPage.g.cs
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\App.g.cs
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\Mukhametianov2_MarkupCompile.cache
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\Mukhametianov2_MarkupCompile.lref
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\Mukhametianov2.exe
+C:\Users\УАТ\Downloads\Гайфуллин\Гайфуллин\obj\Debug\Mukhametianov2.pdb
