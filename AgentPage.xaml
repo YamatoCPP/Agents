@@ -6,9 +6,70 @@
       xmlns:local="clr-namespace:Gayfullin"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ServicePage" FontFamily="Century Gotic">
+      Title="ServicePage" FontFamily="Century Gothic">
 
     <Grid>
-        <Button Click="Button_Click" Background="#B175EE" Content="Вперед" Height="30" Width="175"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="0">
+            <TextBox Name="SearchTB" TextChanged="SearchTB_TextChanged" Height="25" FontSize="15" Width="200" Margin="5"/>
+            <ComboBox Name="ComboSort" SelectionChanged="ComboSort_SelectionChanged" FontSize="15" Width="200" Margin="5">
+                <ComboBoxItem Content="Без сортировки"/>
+                <ComboBoxItem Content="По наименованию"/>
+                <ComboBoxItem Content="По размеру скидки"/>
+                <ComboBoxItem Content="По приоритету агента"/>
+            </ComboBox>
+            <ComboBox Name="ComboFiltration" SelectionChanged="ComboFiltration_SelectionChanged" FontSize="15" Width="200" Margin="5">
+                <ComboBoxItem Content="Без фильтрации"/>
+                <ComboBoxItem Content="МФО"/>
+                <ComboBoxItem Content="ООО"/>
+                <ComboBoxItem Content="ЗАО"/>
+                <ComboBoxItem Content="МКК"/>
+                <ComboBoxItem Content="ОАО"/>
+                <ComboBoxItem Content="ПАО"/>
+            </ComboBox>
+        </WrapPanel>
+        <ListView Name="AgentListView" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Image Width="150" Grid.RowSpan="4" Grid.Column="0" Stretch="UniformToFill" HorizontalAlignment="Center">
+                            <Image.Source>
+                                <Binding Path="Logo">
+                                    <Binding.TargetNullValue>
+                                        <ImageSource>
+                                            img/picture.png
+                                        </ImageSource>
+                                    </Binding.TargetNullValue>
+                                </Binding>
+                            </Image.Source>
+                        </Image>
+                        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
+                            <TextBlock Text="{Binding AgentTypeText}" HorizontalAlignment="Left" FontSize="20"/>
+                            <TextBlock Text="|" FontSize="20"/>
+                            <TextBlock Text="{Binding Title}" HorizontalAlignment="Left" FontSize="20" TextWrapping="Wrap"/>
+                        </StackPanel>
+                        <TextBlock Text="{Binding Sales, StringFormat={}{0} продаж за год}" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" FontSize="20" />
+                        <TextBlock Text="{Binding Phone}" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" FontSize="20" />
+                        <TextBlock Text="{Binding Priority, StringFormat=Приоритетность: {0}}" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" FontSize="20" />
+                        <TextBlock Text="{Binding Discount, StringFormat={}{0}%}" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Right" FontSize="20" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

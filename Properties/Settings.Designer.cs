@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Mukhametianov2.Properties
+namespace Gayfullin.Properties
 {
 
 
